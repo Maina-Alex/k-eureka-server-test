@@ -1,0 +1,13 @@
+server:
+  port: 9713
+
+spring:
+  profiles:
+    active: dev
+
+logging:
+  level:
+    com:
+      netflix:
+         eureka : OFF
+         discovery: OFF
