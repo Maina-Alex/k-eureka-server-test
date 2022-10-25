@@ -10,7 +10,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:9713/eureka/
+      defaultZone: http://discovery-server:9713/eureka/
 
 logging:
   file:
