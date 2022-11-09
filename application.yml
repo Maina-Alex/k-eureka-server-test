@@ -4,10 +4,3 @@ server:
 spring:
   profiles:
     active: prod
-
-logging:
-  level:
-    com:
-      netflix:
-         eureka : OFF
-         discovery: OFF
