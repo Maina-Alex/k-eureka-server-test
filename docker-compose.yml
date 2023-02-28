@@ -1,15 +1,25 @@
 version: '3.7'
 services:
   loans-discovery-server:
-     build: .
+     image: devops-registry.ekenya.co.ke/advancys/loans-eureka-service
      hostname: discovery-server
      container_name: loans-discovery-server
      ports:
        - '9713:9713'
+     environment:
+       - HOST_IP=
      volumes:
-      - ./discoveryLogs:/app/logs
+       - ./discoveryLogs:/app/logs
      restart: always
      deploy:
        resources:
          limits:
-           memory: 256m
+           memory: 512M
+     networks:
+        - advance-net
+
+networks:
+  advance-net:
+    name: advancys-net
+    driver: bridge
+    external: true
