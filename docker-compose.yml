@@ -1,11 +1,13 @@
 version: '3.7'
 services:
   loans-discovery-server:
-     build: .
+     image: devops-registry.ekenya.co.ke/channel-manager/channel-discovery:latest
      hostname: discovery-server
      container_name: loans-discovery-server
      ports:
        - '9713:9713'
+     environment:
+       - server-ip=10.20.2.201
      volumes:
       - ./discoveryLogs:/app/logs
      restart: always
