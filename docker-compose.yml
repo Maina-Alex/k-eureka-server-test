@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   loans-discovery-server:
-     image: devops-registry.ekenya.co.ke/advancys/loans-eureka-service
+     image: devops-registry.ekenya.co.ke/advancys/eureka-service:prod
      hostname: discovery-server
      container_name: loans-discovery-server
      ports:

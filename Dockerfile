@@ -3,5 +3,5 @@ WORKDIR /app
 EXPOSE 9713
 COPY discovery-service.jar app.jar
 COPY application.yml application.yml
-COPY application-uat.yml application-uat.yml
+COPY application-prod.yml application-prod.yml
 ENTRYPOINT java -XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=40 -Djava.awt.headless=true -XX:+UseContainerSupport -jar app.jar
