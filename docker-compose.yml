@@ -1,13 +1,21 @@
 version: '3.7'
 services:
   loans-discovery-server:
+<<<<<<< HEAD
      image: devops-registry.ekenya.co.ke/advancys/eureka-service:prod
+=======
+     image: devops-registry.ekenya.co.ke/channel-manager/channel-discovery:latest
+>>>>>>> 49e3e9b4036e85fa3569e766debef514d5392c1f
      hostname: discovery-server
      container_name: loans-discovery-server
      ports:
        - '9713:9713'
      environment:
+<<<<<<< HEAD
        - HOST_IP=
+=======
+       - server-ip=10.20.2.201
+>>>>>>> 49e3e9b4036e85fa3569e766debef514d5392c1f
      volumes:
        - ./discoveryLogs:/app/logs
      restart: always
