@@ -1,0 +1,147 @@
+2023-05-11 16:45:33.101  INFO 18080 --- [main] c.a.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 17.0.5 on DESKTOP-CJ2TM4F with PID 18080 (C:\Users\Administrator\OneDrive - ECLECTICS INTERNATIONAL LTD\Eclectics\Advancys Ms\eureka-server\target\classes started by Administrator in C:\Users\Administrator\OneDrive - ECLECTICS INTERNATIONAL LTD\Eclectics\Advancys Ms\eureka-server)
+2023-05-11 16:45:33.108  INFO 18080 --- [main] c.a.e.EurekaServerApplication            : The following 1 profile is active: "uat"
+2023-05-11 16:45:39.272  INFO 18080 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e1cec0a3-daf1-3b10-ab8f-c4a08fb2a585
+2023-05-11 16:45:40.670  INFO 18080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9713 (http)
+2023-05-11 16:45:40.701  INFO 18080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 16:45:40.702  INFO 18080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-11 16:45:41.191  INFO 18080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 16:45:41.191  INFO 18080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7903 ms
+2023-05-11 16:45:42.452  INFO 18080 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2023-05-11 16:45:46.522  INFO 18080 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2023-05-11 16:45:46.693  WARN 18080 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-11 16:45:46.735  INFO 18080 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-05-11 16:45:48.388  INFO 18080 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2023-05-11 16:45:48.392  INFO 18080 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:9713/eureka/]
+2023-05-11 16:45:48.828  INFO 18080 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:9713/eureka/
+2023-05-11 16:45:48.851  INFO 18080 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2023-05-11 16:45:48.853  INFO 18080 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2023-05-11 16:45:48.873  INFO 18080 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-11 16:45:48.958  INFO 18080 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-SERVER with eureka with status UP
+2023-05-11 16:45:48.999  INFO 18080 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2023-05-11 16:45:49.001  INFO 18080 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2023-05-11 16:45:49.001  INFO 18080 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2023-05-11 16:45:49.002  INFO 18080 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2023-05-11 16:45:49.002  INFO 18080 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2023-05-11 16:45:49.021  INFO 18080 --- [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2023-05-11 16:45:49.043  INFO 18080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9713 (http) with context path ''
+2023-05-11 16:45:49.045  INFO 18080 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9713
+2023-05-11 16:45:49.397  INFO 18080 --- [main] c.a.e.EurekaServerApplication            : Started EurekaServerApplication in 18.786 seconds (JVM running for 24.217)
+2023-05-11 16:46:18.752  INFO 18080 --- [http-nio-9713-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 16:46:18.752  INFO 18080 --- [http-nio-9713-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 16:46:18.752  INFO 18080 --- [http-nio-9713-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-05-11 16:46:37.790  INFO 18080 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA-SERVER with eureka with status DOWN
+2023-05-11 16:46:37.848  INFO 18080 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2023-05-11 16:46:37.882  INFO 18080 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-05-11 16:46:37.940  INFO 18080 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-05-11 16:46:37.942  INFO 18080 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2023-05-11 16:46:37.945  INFO 18080 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-05-11 16:46:37.972  INFO 18080 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-05-11 16:46:46.330  INFO 14308 --- [main] c.a.e.EurekaServerApplication            : Starting EurekaServerApplication using Java 17.0.5 on DESKTOP-CJ2TM4F with PID 14308 (C:\Users\Administrator\OneDrive - ECLECTICS INTERNATIONAL LTD\Eclectics\Advancys Ms\eureka-server\target\classes started by Administrator in C:\Users\Administrator\OneDrive - ECLECTICS INTERNATIONAL LTD\Eclectics\Advancys Ms\eureka-server)
+2023-05-11 16:46:46.334  INFO 14308 --- [main] c.a.e.EurekaServerApplication            : The following 1 profile is active: "uat"
+2023-05-11 16:46:49.371  INFO 14308 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e1cec0a3-daf1-3b10-ab8f-c4a08fb2a585
+2023-05-11 16:46:50.376  INFO 14308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2023-05-11 16:46:50.421  INFO 14308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 16:46:50.425  INFO 14308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-11 16:46:51.277  INFO 14308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 16:46:51.278  INFO 14308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4759 ms
+2023-05-11 16:46:52.704  INFO 14308 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2023-05-11 16:46:57.820  INFO 14308 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2023-05-11 16:46:58.002  WARN 14308 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-11 16:46:58.064  INFO 14308 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-05-11 16:47:00.085  INFO 14308 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2023-05-11 16:47:00.093  INFO 14308 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:9713/eureka/]
+2023-05-11 16:47:00.719  INFO 14308 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:9713/eureka/
+2023-05-11 16:47:00.761  INFO 14308 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2023-05-11 16:47:00.764  INFO 14308 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2023-05-11 16:47:00.829  INFO 14308 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-11 16:47:01.049  INFO 14308 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-SERVER with eureka with status UP
+2023-05-11 16:47:01.385  INFO 14308 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2023-05-11 16:47:01.387  INFO 14308 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2023-05-11 16:47:01.388  INFO 14308 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2023-05-11 16:47:01.391  INFO 14308 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2023-05-11 16:47:01.393  INFO 14308 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2023-05-11 16:47:01.482  INFO 14308 --- [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2023-05-11 16:47:01.552  INFO 14308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2023-05-11 16:47:01.555  INFO 14308 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2023-05-11 16:47:02.541  INFO 14308 --- [http-nio-8761-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 16:47:02.542  INFO 14308 --- [http-nio-8761-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 16:47:02.545  INFO 14308 --- [http-nio-8761-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-05-11 16:47:03.042  INFO 14308 --- [main] c.a.e.EurekaServerApplication            : Started EurekaServerApplication in 18.52 seconds (JVM running for 20.173)
+2023-05-11 16:48:01.582  INFO 14308 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-05-11 16:48:22.338  INFO 14308 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA-SERVER with eureka with status DOWN
+2023-05-11 16:48:22.380  INFO 14308 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2023-05-11 16:48:22.390  INFO 14308 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-05-11 16:48:22.422  INFO 14308 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-05-11 16:48:22.422  INFO 14308 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2023-05-11 16:48:22.424  INFO 14308 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-05-11 16:48:22.445  INFO 14308 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-05-11 16:50:01.680  INFO 6868 --- [main] c.e.c.EurekaServerApplication            : Starting EurekaServerApplication using Java 17.0.5 on DESKTOP-CJ2TM4F with PID 6868 (C:\Users\Administrator\OneDrive - ECLECTICS INTERNATIONAL LTD\Eclectics\Advancys Ms\eureka-server\target\classes started by Administrator in C:\Users\Administrator\OneDrive - ECLECTICS INTERNATIONAL LTD\Eclectics\Advancys Ms\eureka-server)
+2023-05-11 16:50:01.685  INFO 6868 --- [main] c.e.c.EurekaServerApplication            : The following 1 profile is active: "uat"
+2023-05-11 16:50:05.801  INFO 6868 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b73ee9db-ecd0-32ac-a3b5-035f3998cf4e
+2023-05-11 16:50:07.259  INFO 6868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2023-05-11 16:50:07.309  INFO 6868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 16:50:07.309  INFO 6868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-11 16:50:07.849  INFO 6868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 16:50:07.849  INFO 6868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5969 ms
+2023-05-11 16:50:09.804  INFO 6868 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2023-05-11 16:50:14.589  INFO 6868 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2023-05-11 16:50:14.775  WARN 6868 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-11 16:50:14.856  INFO 6868 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-05-11 16:50:16.583  INFO 6868 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2023-05-11 16:50:16.589  INFO 6868 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:9713/eureka/]
+2023-05-11 16:50:16.865  INFO 6868 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:9713/eureka/
+2023-05-11 16:50:16.890  INFO 6868 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2023-05-11 16:50:16.894  INFO 6868 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2023-05-11 16:50:16.924  INFO 6868 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-11 16:50:17.167  INFO 6868 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-SERVER with eureka with status UP
+2023-05-11 16:50:17.198  INFO 6868 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2023-05-11 16:50:17.199  INFO 6868 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2023-05-11 16:50:17.200  INFO 6868 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2023-05-11 16:50:17.200  INFO 6868 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2023-05-11 16:50:17.201  INFO 6868 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2023-05-11 16:50:17.232  INFO 6868 --- [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2023-05-11 16:50:17.251  INFO 6868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2023-05-11 16:50:17.254  INFO 6868 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2023-05-11 16:50:17.687  INFO 6868 --- [main] c.e.c.EurekaServerApplication            : Started EurekaServerApplication in 19.286 seconds (JVM running for 23.973)
+2023-05-11 16:50:18.076  INFO 6868 --- [RMI TCP Connection(5)-192.168.100.8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 16:50:18.076  INFO 6868 --- [RMI TCP Connection(5)-192.168.100.8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 16:50:18.091  INFO 6868 --- [RMI TCP Connection(5)-192.168.100.8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2023-05-11 16:51:17.211  INFO 6868 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2023-05-11 16:51:40.818  INFO 6868 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application EUREKA-SERVER with eureka with status DOWN
+2023-05-11 16:51:40.851  INFO 6868 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2023-05-11 16:51:40.860  INFO 6868 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-05-11 16:51:40.898  INFO 6868 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-05-11 16:51:40.899  INFO 6868 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2023-05-11 16:51:40.901  INFO 6868 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-05-11 16:51:40.924  INFO 6868 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-05-11 16:51:50.323  INFO 16928 --- [main] c.e.c.EurekaServerApplication            : Starting EurekaServerApplication using Java 17.0.5 on DESKTOP-CJ2TM4F with PID 16928 (C:\Users\Administrator\OneDrive - ECLECTICS INTERNATIONAL LTD\Eclectics\Advancys Ms\eureka-server\target\classes started by Administrator in C:\Users\Administrator\OneDrive - ECLECTICS INTERNATIONAL LTD\Eclectics\Advancys Ms\eureka-server)
+2023-05-11 16:51:50.326  INFO 16928 --- [main] c.e.c.EurekaServerApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-05-11 16:51:53.158  INFO 16928 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b73ee9db-ecd0-32ac-a3b5-035f3998cf4e
+2023-05-11 16:51:53.871  INFO 16928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-11 16:51:53.889  INFO 16928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-11 16:51:53.890  INFO 16928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-11 16:51:54.269  INFO 16928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-11 16:51:54.270  INFO 16928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3824 ms
+2023-05-11 16:51:55.486  INFO 16928 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2023-05-11 16:51:59.152  INFO 16928 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2023-05-11 16:51:59.282  WARN 16928 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-11 16:51:59.320  INFO 16928 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-05-11 16:52:00.566  INFO 16928 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2023-05-11 16:52:00.569  INFO 16928 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:9713/eureka/]
+2023-05-11 16:52:00.888  INFO 16928 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:9713/eureka/
+2023-05-11 16:52:00.904  INFO 16928 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2023-05-11 16:52:00.906  INFO 16928 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2023-05-11 16:52:00.926  INFO 16928 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-05-11 16:52:01.095  INFO 16928 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-SERVER with eureka with status UP
+2023-05-11 16:52:01.124  INFO 16928 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2023-05-11 16:52:01.126  INFO 16928 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2023-05-11 16:52:01.127  INFO 16928 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2023-05-11 16:52:01.127  INFO 16928 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2023-05-11 16:52:01.128  INFO 16928 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2023-05-11 16:52:01.144  INFO 16928 --- [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2023-05-11 16:52:01.155  INFO 16928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-11 16:52:01.158  INFO 16928 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2023-05-11 16:52:01.513  INFO 16928 --- [main] c.e.c.EurekaServerApplication            : Started EurekaServerApplication in 12.63 seconds (JVM running for 15.074)
+2023-05-11 16:52:01.930  INFO 16928 --- [RMI TCP Connection(9)-192.168.100.8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 16:52:01.931  INFO 16928 --- [RMI TCP Connection(9)-192.168.100.8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 16:52:01.935  INFO 16928 --- [RMI TCP Connection(9)-192.168.100.8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
